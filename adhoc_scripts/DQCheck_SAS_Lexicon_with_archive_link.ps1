@@ -12,7 +12,7 @@
     NOTES:
         - Requires no input parameters upon invocation. 
         - User is prompted for output directory and source URL after the script is invoked.
-        - Output is a .txt file (PROCEEDINGS.txt) in a folder of the user's choosing.
+        - Output is a .md file (PROCEEDINGS.md) in a folder of the user's choosing.
 #>
 
 
@@ -122,3 +122,4 @@ if ($TargetUrl.startsWith("https://saslexicon.org/")){
     main $outputFolder $targetUrl
 
 }
+
