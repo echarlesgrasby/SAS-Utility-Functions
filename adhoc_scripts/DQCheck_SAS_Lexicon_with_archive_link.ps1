@@ -110,7 +110,7 @@ function main($outputFolder, $targetUrl) {
                     $ColNum+=1;
         }
 
-        $mdoutput | Out-File -Encoding UTF8 "${outputFolder}\PROCEEDINGS.txt";
+        $mdoutput | Out-File -Encoding UTF8 "${outputFolder}\PROCEEDINGS.md";
 }
 
 # Prompt the user for output directory and targetUrl
@@ -120,4 +120,5 @@ $targetUrl = Get-SourceUrl
 # If the user cancelled before initiating a good target url, do not run main()
 if ($TargetUrl.startsWith("https://saslexicon.org/")){
     main $outputFolder $targetUrl
+
 }
